@@ -1,0 +1,6 @@
+@import "../setup";
+
+//Hide arrows number input
+.ant-input-number-handler-wrap {
+  display: none !important;
+}

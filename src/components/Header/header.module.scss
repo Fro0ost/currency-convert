@@ -1,0 +1,33 @@
+@import '../../assets/styles/setup';
+
+.header {
+  background-color: $white;
+  padding: 1rem 0;
+  box-shadow: $box-shadow-100;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-weight: $fw-bold;
+    font-size: $fs-xl;
+    margin-right: 0.5rem;
+  }
+
+  &__currencyWrapper {
+    margin: -0.5rem;
+
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__currencyItem {
+    margin: 0.5rem;
+    font-weight: $fw-semi;
+  }
+}

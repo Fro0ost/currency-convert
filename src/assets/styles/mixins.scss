@@ -1,0 +1,23 @@
+@mixin transition-time() {
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@mixin transition-time-fastest() {
+  transition: 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@mixin remove-outline() {
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+}
+
+@mixin remove-link-styles() {
+  outline: none;
+  color: initial;
+  text-decoration: none;
+}
